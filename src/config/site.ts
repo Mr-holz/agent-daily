@@ -63,16 +63,16 @@ export const SITE_CONFIG = {
 
 /** Theme colors — CSS variable values */
 export const THEME = {
-  /** Dark theme (primary) */
+  /** Dark theme (primary) — warm orange/gold tone */
   dark: {
-    bg: "#0a0a0a",
-    bgSecondary: "#121212",
-    bgTertiary: "#1a1a1a",
-    textPrimary: "#f0f0f0",
-    textSecondary: "#888888",
-    accent: "#00d4ff",
-    accentMuted: "#005577",
-    border: "#222222",
+    bg: "#0f0b06",
+    bgSecondary: "#1a140e",
+    bgTertiary: "#241c13",
+    textPrimary: "#f5efe8",
+    textSecondary: "#a09080",
+    accent: "#f4a261",
+    accentMuted: "#5a3d20",
+    border: "#2a2218",
   },
   /** Light theme (optional) */
   light: {
