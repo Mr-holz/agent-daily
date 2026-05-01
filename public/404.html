@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Agent 日报</title>
+  <script>
+    // Single Page Apps for GitHub Pages
+    // https://github.com/rafgraph/spa-github-pages
+    var sessionStorageKey = 'gh-pages-redirect-to'
+    var path = sessionStorage.getItem(sessionStorageKey)
+    if (path) {
+      sessionStorage.removeItem(sessionStorageKey)
+      window.location.replace('/agent-daily' + path)
+    } else {
+      var pathSegments = window.location.pathname.split('/agent-daily')
+      var segment = pathSegments.length > 1 ? pathSegments[1] : ''
+      if (segment && segment !== '/') {
+        sessionStorage.setItem(sessionStorageKey, segment)
+        window.location.replace('/agent-daily/')
+      }
+    }
+  </script>
+</head>
+<body></body>
+</html>
